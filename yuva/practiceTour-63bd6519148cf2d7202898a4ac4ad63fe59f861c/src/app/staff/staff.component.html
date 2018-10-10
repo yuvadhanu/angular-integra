@@ -1,0 +1,13 @@
+<h1>tseting</h1>
+
+<ul>
+  <li *ngFor = "let listOfStaff of empList" 
+  (click)="onSelect(listOfStaff)">
+    {{listOfStaff.id}}&nbsp;&nbsp;{{listOfStaff.name}}
+  </li> 
+</ul>
+
+<!-- <div *ngIf="listInput">
+    <input [(ngModel)]="selectedList.name">
+  </div> -->
+<app-student [listInput]="selectedList"></app-student>
